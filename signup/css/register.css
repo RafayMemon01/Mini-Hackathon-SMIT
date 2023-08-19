@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #dee2e6;
+}
+
+header nav {
+  background-color: #7749f8;
+  display: flex;
+  justify-content: space-around;
+  height: 1.5em;
+  color: white;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header nav a button {
+  /* text-decoration: none; */
+  /* color: white; */
+  /* font-weight: bold; */
+  background-color: none;
+  background: none;
+  border-color: none;
+  border: none;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+header div {
+  background-color: #ffffff;
+  height: 4em;
+  display: flex;
+  text-align: center;
+  padding-top: 1.5%;
+  padding-left: 10rem;
+  font-weight: bolder;
+  border-bottom: dotted 2px #dee2e6;
+}
+
+
+/* login for styling 
+ */
+
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+main #registerForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: max-content;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.253);
+  }
+  
+#registerForm input[type="email"],
+#registerForm input[type="password"] {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  /* background-color: #f2f2f2; */
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+#registerForm input[type="email"]:focus {
+  border-color: #7749f8;
+  background-color: #f2f2f2;
+}
+#registerForm input[type="email"]::placeholder,
+#registerForm input[type="password"]::placeholder {
+  color: #aaa;
+}
+#registerForm input[type="name"] {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  /* background-color: #f2f2f2; */
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+#registerForm input[type="name"]:focus{
+  border-color: #7749f8;
+  background-color: #f2f2f2;
+}
+#registerForm input[type="name"]::placeholder{
+  color: #aaa;
+}
+#registerForm .loginBtn {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 20px;
+    background-color: #7546f5;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #registerForm .loginBtn:hover {
+    background-color: #9b76ff;
+  }
+
+  @media screen and (max-width: 425px) {
+    header div{
+        padding-left: 2rem ;
+        padding-top: 1em;
+    }
+    #registerForm{
+        margin: 0 25;
+    }
+    errormessage{
+      color: red;
+    }
+    
+    
+  }
+  @media screen and (max-width: 320px) {
+    header nav h2{
+        font-size: medium;
+    }
+    header nav a{
+        font-size: smaller;
+    }
+    header nav a button{
+        font-size: smaller;
+    }
+
+    
+  }

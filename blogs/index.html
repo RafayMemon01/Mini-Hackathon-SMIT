@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog App || User Dashboard</title>
+  </head>
+  <link rel="stylesheet" href="./style.css" />
+  <body>
+    <header>
+      <nav>
+        <h2>Personal Blogging App</h2>
+        <div class="right">
+          <a href=""><button>UserName</button></a>
+          <a href="../login/"><button>Logout</button></a>
+        </div>
+      </nav>
+      <div class="headerheading"><h1>Dashboard</h1></div>
+    </header>
+    <main>
+      <form id="createPost">
+        <input
+          type="text"
+          id="postTitle"
+          required
+          placeholder="Blog title here..."
+        />
+        <textarea
+          name="text"
+          required
+          placeholder="what is in your mind?"
+          id="postText"
+          cols="30"
+          rows="3"
+          style="resize: none"
+        ></textarea>
+        <button type="submit" class="submitBtn">Publish Blog</button>
+      </form>
+      <div class="main">
+        <h2>All Blogs</h2>
+        <div id="contents" data-post-id="">
+          <div id="contentHeader">
+            <div id="profileimg"></div>
+            <div id="detail">
+              <div id="blogtitle">
+                An Action Button Could Be Coming to the iPhone 15
+              </div>
+              <br />
+              <span id="authorName">Inzamam Malik</span>
+              <span id="publishDate">Augest 17th, 2023</span>
+            </div>
+          </div>
+          <div id="contentBody">
+            <textarea
+              name="blog"
+              id="text"
+              cols="30"
+              rows="5"
+              style="resize: none"
+            >
+Apple could be putting an Action button on your next iPhone. According to a July report from MacRumors, code in the fourth iOS 17 developer beta hints at functionality for an Action button on the next-gen iPhone 15 Pro and Pro Max models. Apple introduced the Action button on the Apple Watch Ultra. It's a physical button on the side of the Apple Watch Ultra that allows you to run a preselected function or program when you press it without unlocking your device or navigating to an app. Some of the preselected functions include starting a stopwatch, beginning a workout and turning on your flashlight.
+            </textarea>
+            <div id="contentfooter">
+              <button id="editBtn">Edit</button>
+              <button id="deleteBtn">Delete</button>
+            </div><hr>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
